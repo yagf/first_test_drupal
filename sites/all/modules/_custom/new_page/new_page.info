@@ -1,0 +1,9 @@
+name = New Page Module
+description = "creation de nouvelles pages "
+core = 7.x
+
+;declaration des dependances ex : dependencies[] = {project}:{module}
+dependencies[] = views:views
+
+;packages
+package = Smile

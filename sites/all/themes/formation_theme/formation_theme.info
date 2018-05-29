@@ -1,0 +1,39 @@
+name = formation_theme
+description = mon super theme pour la formation
+core = 7.x
+
+;importation des fichiers (CSS)
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/bootstrap.css
+
+
+;importation des fichiers(js)
+scripts[all][] = js/bootstrap.js
+
+;declaration des regions
+regions[logo] = logo
+regions[menu] = menu
+
+;regions slider
+regions[slider] = slider
+
+;la seule région du milieu
+regions[content] = content
+regions[full_content] = Large Content
+
+;Les deux régions du milieu
+regions[first_half_middle] = First Half Middle
+regions[second_half_middle] = Second Half Middle
+
+;Les trois régions du milieu
+regions[first_middle] = First Middle
+regions[second_middle] = Second Middle
+regions[thrid_middle] = Thrid Middle
+
+;regions du Footer
+regions[first_footer] = First Footer
+regions[second_footer] = Second Footer
+regions[thrid_footer] = Thrid Footer
+regions[full_footer] = Full Footer
+
+screenshot = screenshot.jpg

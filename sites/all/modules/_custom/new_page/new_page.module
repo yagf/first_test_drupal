@@ -1,0 +1,38 @@
+
+<?php
+/*
+* implement hook_menu()
+*/
+function new_page_menu() {
+     $items = array();
+     $items['bienvenue'] = array(
+        'title'             =>  'Nouvelle Page',  //page title
+        'description'       =>  'page Information',  //description show when mouse hover on link
+        //'type' => MENU_NORMAL_ITEM, // add in the custom menu like a link
+        'page callback'     =>  'new_page_create',  //callback function which is invoked when menu item is called.
+        'access callback'   =>  true,  //any user can access this page
+       );
+      return $items;
+}
+
+
+/*
+* implement hook_theme()
+*/
+function new_page_theme() {
+        $themes = array();
+        $themes['new_template'] = array(
+        'variables' => array(),
+        'template' => 'templates/new_template',
+        'path' => drupal_get_path('module', 'new_page'),
+      );
+     return $themes;
+
+}
+
+/*
+* implement page callback()
+*/
+function new_page_create() {
+  return theme('new_template');
+}
